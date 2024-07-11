@@ -13,9 +13,12 @@ response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
     meme_data = response.json()
-    memes = meme_data['memes']  # Assuming 'memes' is the key that holds the list of memes
-    random_meme = random.choice(memes)  # Select a random meme
-    meme_url = random_meme['url']  # Assuming each meme has a 'url' key
+    print(meme_data)  # Print the structure of the meme_data
+    
+    # Assuming the correct key is 'memes', adjust based on the printed structure
+    memes = meme_data['data']['children']
+    random_meme = random.choice(memes)
+    meme_url = random_meme['data']['url']  # Adjust based on the printed structure
     
     # Read the current content of README.md
     with open('README.md', 'r') as file:
