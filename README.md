@@ -1,4 +1,4 @@
-<div style="background: url('https://raw.githubusercontent.com/Adithya2357/Adithya2357/main/path-to-your-image.jpg'); padding: 20px; background-size: cover; color: white;">
+<div style="background: url('https://raw.githubusercontent.com/Adithya2357/Adithya2357/main/360_F_486244201_kiGTP0UjgUYxZ8DIWHEXtKIvO4gydPe3.jpg'); padding: 20px; background-size: cover; color: white;">
 <div style="background: url('https://t3.ftcdn.net/jpg/04/86/24/42/360_F_486244201_kiGTP0UjgUYxZ8DIWHEXtKIvO4gydPe3.jpg'); padding: 20px; background-size: cover; color: white;">
 
 # ┌──(Adithya_aadi㉿Github/whoami)-[~]
