@@ -1,5 +1,7 @@
 import requests
+import random
 
+# RapidAPI credentials
 api_key = '5aac42ee75mshd75d3ee03793a22p1c88b4jsna14c72eb6b72'
 url = "https://reddit-meme.p.rapidapi.com/memes/trending"
 
@@ -19,18 +21,22 @@ if response.status_code == 200:
         
         # Ensure there is at least one meme in the list
         if memes:
-            meme_url = memes[0]['data']['url']
+            meme = random.choice(memes)
+            meme_url = meme['data']['url']
             
             # Read the README file
-            with open('README.md', 'r') as file:
+            readme_file = 'README.md'
+            with open(readme_file, 'r') as file:
                 readme_content = file.readlines()
                 
-            # Add the meme URL to the README content
-            readme_content.append(f"\n![Random Dev Meme]({meme_url})\n")
-            
-            # Write the updated content back to the README file
-            with open('README.md', 'w') as file:
-                file.writelines(readme_content)
+            # Replace the placeholder with the new meme URL
+            with open(readme_file, 'w') as file:
+                for line in readme_content:
+                    if line.strip().startswith('![Random Dev Meme]'):
+                        file.write(f'![Random Dev Meme]({meme_url})\n')
+                    else:
+                        file.write(line)
+            print("README.md updated successfully.")
         else:
             print("No memes found in the response.")
     else:
