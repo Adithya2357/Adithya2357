@@ -8,7 +8,7 @@ url = "https://programming-memes-images.p.rapidapi.com/v1/memes"
 
 headers = {
 	"x-rapidapi-key": api_key,
-	"x-rapidapi-host": url
+	"x-rapidapi-host": "programming-memes-images.p.rapidapi.com"
 }
 
 
