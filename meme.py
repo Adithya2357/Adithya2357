@@ -3,12 +3,14 @@ import random
 
 # RapidAPI credentials
 api_key = '5aac42ee75mshd75d3ee03793a22p1c88b4jsna14c72eb6b72'
-url = "https://reddit-meme.p.rapidapi.com/memes/trending"
+url = "https://programming-memes-images.p.rapidapi.com/v1/memes"
+
 
 headers = {
-    "x-rapidapi-key": api_key,
-    "x-rapidapi-host": "reddit-meme.p.rapidapi.com"
+	"x-rapidapi-key": api_key,
+	"x-rapidapi-host": url
 }
+
 
 response = requests.get(url, headers=headers)
 
