@@ -24,7 +24,7 @@ jobs:
 
       - name: Run update script
         run: |
-          python update_readme.py
+          python meme.py
 
       - name: Commit and push changes
         run: |
