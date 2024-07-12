@@ -29,14 +29,22 @@ if response.status_code == 200:
             with open(readme_file, 'r') as file:
                 readme_content = file.readlines()
                 
+            # Flag to check if the placeholder was found and replaced
+            placeholder_found = False
+
             # Replace the placeholder with the new meme URL
             with open(readme_file, 'w') as file:
                 for line in readme_content:
                     if line.strip().startswith('![Random Dev Meme]'):
                         file.write(f'![Random Dev Meme]({meme_url})\n')
+                        placeholder_found = True
                     else:
                         file.write(line)
-            print("README.md updated successfully.")
+
+            if not placeholder_found:
+                print("Placeholder not found in README.md.")
+            else:
+                print("README.md updated successfully with the new meme URL.")
         else:
             print("No memes found in the response.")
     else:
