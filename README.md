@@ -4,7 +4,7 @@
 # ┌──(Adithya_aadi㉿Github/whoami)-[~]
 # └─$ cat whoami.txt
 <h1 align="center">Heyyy 👋, I'm Adithya aka aadi✌️</h1>
-<h4>An Engineer specializing in Cybersecurity with proficiency in programming languages and skilled in network scanning tools, with a profound interest in AI, Machine Learning, and web development. I'm committed to enhance skills and to make meaningful contributions to cybersecurity.</h4>
+<h3>An Engineer specializing in Cybersecurity with proficiency in programming languages and skilled in network scanning tools, with a profound interest in AI, Machine Learning, and web development. I'm committed to enhance skills and to make meaningful contributions to cybersecurity.</h3>
 <img align="right" src="https://github.com/rajaprerak/rajaprerak/raw/master/developer.gif" alt="Coder GIF" height="250" style="max-width: 70%; display: inline-block;" data-target="animated-image.originalImage">
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=adithya2357&label=Profile%20views&color=0e75b6&style=flat" alt="adithya2357" /> </p>
 
